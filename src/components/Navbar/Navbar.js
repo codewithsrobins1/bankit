@@ -11,14 +11,14 @@ import {
     NavBtnLink 
 } from './NavbarElements';
 
-export const Navbar = () => {
+export const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/">BankIt</NavLogo>
-                    <MobileIcon>
-                        <FaBars />
+                    <MobileIcon onClick={toggle}>
+                        <FaBars/>
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
