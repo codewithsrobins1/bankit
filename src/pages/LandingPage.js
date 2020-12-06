@@ -5,6 +5,7 @@ import { HeroSection } from '../components/HeroSection/HeroSection';
 import { InfoSection } from '../components/InfoSection/InfoSection';
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
 import { Services } from '../components/Services/Services';
+import { Footer } from '../components/Footer/Footer';
 
 export const LandingPage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ export const LandingPage = () => {
             <InfoSection {...homeObjTwo}/>
             <Services />
             <InfoSection {...homeObjThree}/>
+            <Footer />
         </>
     )
 }
