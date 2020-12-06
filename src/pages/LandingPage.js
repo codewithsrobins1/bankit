@@ -3,6 +3,8 @@ import { Sidebar } from '../components/Sidebar/Sidebar';
 import { Navbar } from '../components/Navbar/Navbar';
 import { HeroSection } from '../components/HeroSection/HeroSection';
 import { InfoSection } from '../components/InfoSection/InfoSection';
+import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
+import { Services } from '../components/Services/Services';
 
 export const LandingPage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +17,10 @@ export const LandingPage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HeroSection />
-            <InfoSection />
+            <InfoSection {...homeObjOne}/>
+            <InfoSection {...homeObjTwo}/>
+            <Services />
+            <InfoSection {...homeObjThree}/>
         </>
     )
 }
