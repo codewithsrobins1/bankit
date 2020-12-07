@@ -8,10 +8,9 @@ import { Container,
     FormLabel, 
     FormInput, 
     FormButton, 
-    Text 
-} from './SignInElements'
+} from './SignUpElements'
 
-export const SignIn = () => {
+export const SignUp = () => {
     return (
         <>
             <Container>
@@ -19,13 +18,16 @@ export const SignIn = () => {
                     <Icon to="/">BankIt</Icon>
                     <FormContent>
                         <Form action="#">
-                            <FormH1>Sign in to your account</FormH1>
-                                <FormLabel htmlFor='for'>Email</FormLabel>
+                            <FormH1>Sign up for an account</FormH1>
+                                <FormLabel htmlFor='fullName'>Full Name</FormLabel>
+                                <FormInput type="text" required />
+                                <FormLabel htmlFor='email'>Email</FormLabel>
                                 <FormInput type="email" required />
-                                <FormLabel htmlFor="for">Password</FormLabel>
+                                <FormLabel htmlFor="password">Password</FormLabel>
+                                <FormInput type="password" required />
+                                <FormLabel htmlFor="passwordConfirmation">Confirm Password</FormLabel>
                                 <FormInput type="password" required />
                                 <FormButton type='submit'>Continue</FormButton>
-                                <Text>Forgot password</Text>
                         </Form>
                     </FormContent>
                 </FormWrap>
