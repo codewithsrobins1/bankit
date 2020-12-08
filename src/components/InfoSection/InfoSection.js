@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button } from '../ButtonElements';
+import { useHistory } from 'react-router-dom';
+import { Button } from '../ButtonElements/ButtonElements';
 import { 
     InfoContainer,
     InfoWrapper,
@@ -15,7 +16,13 @@ import {
     ImgWrap
 } from './InfoSectionElements';
 
-export const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, primary, dark, dark2 }) => {
+export const InfoSection = ({ navigate, lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, primary, dark, dark2 }) => {
+    const history = useHistory();
+
+    const handleClick = () => {
+        history.push(navigate)
+    }
+
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -28,7 +35,7 @@ export const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headLin
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <BtnWrap>
                                     <Button 
-                                        to="home" 
+                                        onClick={handleClick}
                                         smooth={true} 
                                         duration={500} 
                                         spy={true} 
