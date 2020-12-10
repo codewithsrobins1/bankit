@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://bankit-admin:test123@bloggerapplication.hv64k.mongodb.net/bankit?retryWrites=true&w=majority",
+    "jwtSecret": "bankit_secret"
+}
