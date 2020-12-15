@@ -18,13 +18,28 @@ const links = [
                         }
                     }
                 }
-            }
+            },
+            {
+                name: 'Logout',
+                url: '/',
+                key: 'key2',
+                iconProps: {
+                    iconName: 'Settings',
+                    styles: {
+                        root: {
+                            fontSize: 20,
+                            color: '#01bf71',
+                        }
+                    }
+                }
+            },
         ]
     }
 ]
 
 export const Navigation = () => {
     initializeIcons();
+
     return (
         <Nav 
             groups={links}
