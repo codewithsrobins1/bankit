@@ -3,6 +3,7 @@ import { Navigation } from '../components/Dashboard/Navigation/Navigation';
 import 'office-ui-fabric-react/dist/css/fabric.css';
 import '../components/Dashboard/styles.css';
 import { CardSection } from '../components/Dashboard/Cards/CardSection';
+import { OperationsTable } from '../components/Dashboard/OperationsTable/OperationsTable';
 
 export const Dashboard = () => {
     return (
@@ -17,7 +18,7 @@ export const Dashboard = () => {
                             <CardSection />
                         </div>
                         <div className="ms-Grid-row">
-
+                            <OperationsTable />
                         </div>
                     </div>
                 </div>
