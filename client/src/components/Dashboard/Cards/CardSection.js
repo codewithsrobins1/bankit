@@ -4,6 +4,7 @@ import { Text, initializeIcons } from '@fluentui/react';
 import 'office-ui-fabric-react/dist/css/fabric.css';
 import { container, icon, styles } from  './styles';
 import { cardInfo } from './data'
+import { v4 as uuidv4 } from 'uuid';
 
 export const CardSection = () => {
     initializeIcons();
@@ -11,7 +12,7 @@ export const CardSection = () => {
     return (
         <div style={container}>
             {cardInfo.map((card) => (
-                <div className="s-Grid-col ms-sm3 ms-xl3">
+                <div key={uuidv4} className="s-Grid-col ms-sm3 ms-xl3">
                     <Card styles={styles.cardStyles}>
                         <Card.Section>
                             <Card.Item>

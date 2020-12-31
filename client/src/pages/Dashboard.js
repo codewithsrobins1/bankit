@@ -4,6 +4,7 @@ import 'office-ui-fabric-react/dist/css/fabric.css';
 import '../components/Dashboard/styles.css';
 import { CardSection } from '../components/Dashboard/Cards/CardSection';
 import { OperationsTable } from '../components/Dashboard/OperationsTable/OperationsTable';
+import { WelcomeMessage } from '../components/Dashboard/WelcomeMessage/WelcomeMessage';
 
 export const Dashboard = () => {
     return (
@@ -14,6 +15,9 @@ export const Dashboard = () => {
                         <Navigation />
                     </div>
                     <div className="ms-Grid-col ms-sm11 ms-xl11 main-element">
+                        <div className="ms-Grid-row">
+                            <WelcomeMessage />
+                        </div>
                         <div className="ms-Grid-row">
                             <CardSection />
                         </div>

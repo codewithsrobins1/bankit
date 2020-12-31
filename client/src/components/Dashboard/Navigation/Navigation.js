@@ -7,7 +7,7 @@ const links = [
         links: [
             {
                 name: 'Dashboard',
-                url: '/',
+                url: 'http://localhost:3000/dashboard',
                 key: 'key1',
                 iconProps: {
                     iconName: 'News',
