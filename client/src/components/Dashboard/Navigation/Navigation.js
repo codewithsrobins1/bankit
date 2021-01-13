@@ -21,7 +21,7 @@ const links = [
             },
             {
                 name: 'Logout',
-                url: '/',
+                url: 'http://localhost:3000',
                 key: 'key2',
                 iconProps: {
                     iconName: 'Settings',
