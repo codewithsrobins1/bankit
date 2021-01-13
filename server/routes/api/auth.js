@@ -8,7 +8,7 @@ const auth = require('../../middleware/auth');
 const User = require('../../models/User');
 
 // @route   POST api/auth
-// @desc    Authenticate user
+// @desc    Authenticate user during login
 // @access  Public
 router.post('/', (req, res) => {
     const { email, password } = req.body;
