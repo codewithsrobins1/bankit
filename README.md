@@ -1,6 +1,6 @@
 # Bankit App
 
-A virtual bank landing page that will have a budgeting tracking app.
+A virtual bank landing page that will have a budgeting tracking app. Sign in with fake information to see user dashboard.
 
 ## Demo
 
