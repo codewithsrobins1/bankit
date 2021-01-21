@@ -5,7 +5,7 @@ import { container, header } from  './styles';
 export const WelcomeMessage = () => {
     return (
         <div style={container}>
-            <h1 style={header}>Welcome, Sean</h1>
+            <h1 style={header}>Welcome, Customer</h1>
         </div>
     )
 };
