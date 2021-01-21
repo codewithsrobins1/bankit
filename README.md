@@ -1,6 +1,6 @@
-# Fitted App
+# Bankit App
 
-A fullstack MERN application where users can save their outfits or articles of clothing.
+A virtual bank landing page that will have a budgeting tracking app.
 
 ## Demo
 
